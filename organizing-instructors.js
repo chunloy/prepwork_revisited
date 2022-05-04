@@ -12,17 +12,6 @@ const list2 = [
   { name: "Carlos", course: "Web" }
 ];
 
-//expected output is a key array pair
-// {
-//   iOS: ["Samuel"],
-//     Web: ["Victoria", "Karim", "Donald"];
-// }
-// {
-//   Blockchain: ["Brendan"],
-//     Web: ["David", "Carlos"],
-//       iOS: ["Martha"];
-// }
-
 const getCourseList = function(instructors) {
   const courseList = [];
   for (const instructor of instructors) {
@@ -45,7 +34,6 @@ const organizeInstructors = function(instructors, callback) {
       }
     }
   }
-
   return output;
 };
 
